@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+    <title>Sliding with JavaScript</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style4.css" />
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="apple.png"/>
+            <h2>E-Groceries</h2>
+          </div>
+               
+          <table class="header-table">
+              <tr>
+                  <td><a href="#home">Home</a></td>
+                  <td><a href="#ourpackages">Our Package</a></td>
+                  <td><a href="#contactUs">Contact Us</a></td>
+              </tr>
+          </table>
+    </header>
+    <div class="banner-container">
+        <h1 class="banner-text">Top Rated E-Groceries Shop in Indonesian</h1>
+        <p>Every Day with The Best Ingredients</p>
+        <img src="headGrocer.jpg" alt="Banner Image 1">
+        <img src="green.jpg" alt="Banner Image 2">
+        <img src="green2.jpg" alt="Banner Image 3">
+      </div>
+      
+    <script src="script4.js"></script>
+
+      <div class="container">
+        <div class="grid-1">
+            <!-- <img src="green.jpg" alt="Gambar" width="100%" height="auto"> -->
+            <div class="cardd">
+                <img src="green.jpg" alt="Gambar" width="100%" height="auto">
+                <h2>What They Say ?</h2>
+                <p>Setiap hari beli sayur buah disini.</p>
+            </div>
+            <div class="comment-grid">
+                <div class="profile">
+                  <img src="headGrocer.jpg" alt="Profile Picture">
+                </div>
+                <div class="comment">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id hendrerit odio, sit amet eleifend lorem. Donec imperdiet mauris sed augue pellentesque maximus.</p>
+                </div>
+              </div>
+        </div>
+        <div class="grid-2">
+            <h1>Contact Us</h1>
+            <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima</p>
+            <form id="myForm">
+                <label for="name">Your Name :</label>
+                <input type="text" id="name" name="name" required>
+              
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+              
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+              
+                <button type="submit" onclick="validateForm()" style="height: 50px;">Submit</button>
+              </form>
+        </div>
+        </div>
+        <div class="packages"> <h1>Our Packages</h1></div>
+        <div class="service"  id="ourpackages">
+            <div class="grid-container">
+              <div class="grid-item item1">
+                <img src="avocado.jpg" alt="Foto 1">
+                <figcaption>Teks deskripsi gambar</figcaption>
+              </div>
+              <div class="grid-item item2">
+                <img src="bayam.jpg" alt="Foto 2">
+              </div>
+              <div class="grid-item item3">
+                <img src="kubis.jpg" alt="Foto 3">
+              </div>
+              <div class="grid-item item4">
+                <img src="stroberi.jpg" alt="Foto 4">
+              </div>
+              <div class="grid-item item1">
+                <img src="tomatoes.jpg" alt="Foto 1">
+              </div>
+              <div class="grid-item item1">
+                <img src="wortel.jpg" alt="Foto 1">
+              </div>
+            </div>
+          </div>
+          <div class="penutup" >
+            <h1>Your Closing Argument Headline</h1>
+            <p>Travel Time adalah template web travel gratis yang paling fleksibel. Di sini, Travel Time menggabungkan mesin pencari yang kuat dengan blog dan halaman yang kaya informasi. </p>
+            <button>CALL TO ACTION</button>
+          </div>
+          <div class="footer-sec">
+            <h4>Moqups</h4>
+            <p> Term of Service | Privacy Policy</p>
+            <p>2019 Travel Time</p>
+          </div>
+
+</body>
+</html>

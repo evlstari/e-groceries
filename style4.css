@@ -1,0 +1,249 @@
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #839477;
+  color: #ffff;
+  padding: 20px 20px;
+  height: 80px; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  z-index: 999; 
+}
+
+.header-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: 15px;
+}
+
+.header-table td {
+  padding: 5px 15px;
+  border: 1px solid black;
+}
+
+.header-table td a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.header-table td:hover {
+  background-color: grey;
+}
+
+.header-left img {
+  max-width: 40%;
+  height: auto;
+  text-align: center;
+}
+
+.banner-container {
+  height: 500px; 
+  position: relative; 
+  overflow: hidden; 
+}
+
+.banner-container img {
+  position: absolute; 
+  top: 0; 
+  left: 0;
+  height: 100%; 
+  width: 100%; 
+  opacity: 0; 
+  transition: opacity 1s ease-in-out; 
+  object-fit: cover;
+  filter: blur(3px);
+}
+
+.banner-container img.active {
+  opacity: 1; 
+}
+
+.banner-text {
+  position: absolute; 
+  top: 40%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: white; 
+  z-index: 1; 
+  font-weight: bold;
+}
+
+.banner-container p {
+  z-index: 1;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  color: white;
+}
+/* Membuat Grid */
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+  padding-bottom: 100px;
+}
+
+.grid-1 {
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.grid-1 img {
+  border-radius: 30px;
+}
+
+.grid-2 {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 10px 10px;
+  background-color: #ccc;
+  border-radius: 5%;
+}
+.grid-2 h1, p{
+  text-align: center;
+ 
+}
+form {
+
+  position: absolute;
+  display: grid;
+  top: 40%;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+button{
+  grid-column: 1/3;
+}
+
+/*card komentar*/
+.comment-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-gap: 10px;
+  margin-bottom: 20px;
+  
+}
+
+.comment-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 30%;
+}
+
+.comment {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/*macam buah sayur*/
+.service {
+  margin: 20px 20px;
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  margin: 5px 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 5px;
+  /* height: 50%; */
+  transition: all 0.5s ease;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.grid-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.grid-item:hover:before {
+  opacity: 1;
+}
+
+.grid-item:hover img {
+  transform: scale(1.1);
+}
+
+/* packages */
+.packages{
+  padding: 20px 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 50px;
+  background-color:  #ccc;;
+  color: white;
+  text-align: center;
+}
+
+/* penutup */
+.penutup{
+  border-top: 1px solid #ccc;;
+  border-bottom: 1px solid #ccc;;
+  height: fit-content;
+  margin-top: 100px;
+  padding: 20px 20px;
+
+  text-align: center;
+}
+
+.penutup h4, p, button{
+  margin-top: 20px;
+}
+.penutup button{
+  padding: 10px 15px;
+  background-color:  #839477;
+  font-weight: bold;
+}
+
+.footer-sec{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #839477;
+}
+
+@media screen and (max-width: 600px) {
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+  }
+  
+}
